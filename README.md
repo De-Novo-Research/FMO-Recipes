@@ -325,14 +325,14 @@ See [Delphi/docs/ALGORITHM.md](Delphi/docs/ALGORITHM.md) for detailed explanatio
 │   ├── DyeEntryDialog.pas     # Dye entry dialog
 │   ├── FMORecipe.Sets.pas     # Recipe algorithm
 │   ├── FMORecipe.Types.pas    # Type definitions
-│   ├── sample.csv             # Example input
 │   └── docs/                  # Documentation
 │       ├── README.md
 │       ├── ARCHITECTURE.md
 │       └── ALGORITHM.md
-│
-└── Racket Algo/               # CLI tool
-    └── typed-cli.rkt          # Command-line interface
+└── Sample Input/         # Different example inputs
+│   ├── sample.csv             # Example input
+└── Racket/               # CLI tool
+    ├── typed-cli.rkt          # Command-line interface
 ```
 
 ---
