@@ -348,9 +348,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This project is licensed under the GNU 3.0 License
 
 ---
-
-## Acknowledgments
-
-- Developed for flow cytometry research applications
-- Delphi GUI built with Embarcadero Delphi and FireMonkey framework
-- Racket CLI uses contracts for type safety
