@@ -1,0 +1,8 @@
+dye,amount,FMO
+FITC,10,true
+PerCP,23,true
+BUV395,66,true
+APC,25,true
+eFluor 450,23,false
+BV785,76,false
+PerCP-Cy5.5,100,false

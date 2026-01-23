@@ -1,0 +1,167 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'FMO Recipe Builder'
+  ClientHeight = 600
+  ClientWidth = 597
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object btnAdd: TButton
+    Position.X = 496.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Add...'
+    OnClick = btnAddClick
+  end
+  object btnEdit: TButton
+    Position.X = 496.000000000000000000
+    Position.Y = 92.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Edit...'
+    OnClick = btnEditClick
+  end
+  object btnDelete: TButton
+    Position.X = 496.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Delete'
+    OnClick = btnDeleteClick
+  end
+  object btnClear: TButton
+    Position.X = 496.000000000000000000
+    Position.Y = 164.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Clear'
+    OnClick = btnClearClick
+  end
+  object grdDyes: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 24.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 464.000000000000000000
+    Size.Height = 288.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    RowHeight = 24.000000000000000000
+    Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick]
+    OnSelectCell = grdDyesSelectCell
+    OnCellDblClick = grdDyesCellDblClick
+    Viewport.Width = 444.000000000000000000
+    Viewport.Height = 263.000000000000000000
+    object colColor: TStringColumn
+      Header = 'Dye Name'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 180.000000000000000000
+    end
+    object colAmount: TStringColumn
+      Header = 'Amount in FMO'
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object colLocation: TStringColumn
+      Header = 'Location'
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 120.000000000000000000
+    end
+  end
+  object lblRecipe: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Recipe'
+    TabOrder = 5
+  end
+  object mmoRecipe: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    Anchors = [akLeft, akTop, akBottom]
+    Position.X = 16.000000000000000000
+    Position.Y = 372.000000000000000000
+    Size.Width = 560.000000000000000000
+    Size.Height = 212.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 556.000000000000000000
+    Viewport.Height = 208.000000000000000000
+  end
+  object SaveDialog: TSaveDialog
+    DefaultExt = '.csv'
+    Filter = 'CSV Files (*.csv)|*.csv|All Files (*.*)|*.*'
+    Title = 'Save CSV File'
+    Left = 400
+    Top = 352
+  end
+  object OpenDialog: TOpenDialog
+    DefaultExt = '.csv'
+    Filter = 'CSV Files (*.csv)|*.csv|All Files (*.*)|*.*'
+    Title = 'Load CSV File'
+    Left = 336
+    Top = 352
+  end
+  object RecipeSaveDialog: TSaveDialog
+    DefaultExt = '.txt'
+    Filter = 'Text Files (*.txt)|*.txt|All Files (*.*)|*.*'
+    Title = 'Save Recipe File'
+    Left = 272
+    Top = 352
+  end
+  object MainMenu: TMainMenu
+    Left = 16
+    Top = 8
+    object mnuFile: TMenuItem
+      Text = 'File'
+      object mnuFileSave: TMenuItem
+        Locked = True
+        Text = 'Save CSV...'
+        OnClick = mnuFileSaveClick
+      end
+      object mnuFileLoad: TMenuItem
+        Locked = True
+        Text = 'Load CSV...'
+        OnClick = mnuFileLoadClick
+      end
+      object mnuFileSaveRecipe: TMenuItem
+        Locked = True
+        Text = 'Save Recipe...'
+        OnClick = mnuFileSaveRecipeClick
+      end
+      object mnuFileSep1: TMenuItem
+        Locked = True
+        Text = '-'
+      end
+      object mnuFileExit: TMenuItem
+        Locked = True
+        Text = 'Exit'
+        OnClick = mnuFileExitClick
+      end
+    end
+    object mnuBuild: TMenuItem
+      Text = 'Build'
+      object mnuBuildRecipe: TMenuItem
+        Locked = True
+        Text = 'Build Recipe...'
+        OnClick = mnuBuildRecipeClick
+      end
+    end
+  end
+end

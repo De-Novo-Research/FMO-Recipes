@@ -1,0 +1,102 @@
+object dlgDyeEntry: TdlgDyeEntry
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Dye Entry'
+  ClientHeight = 180
+  ClientWidth = 350
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object lblColor: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 66.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Dye Name:'
+    TabOrder = 5
+  end
+  object cboColor: TComboEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    ItemHeight = 19.000000000000000000
+    ItemIndex = -1
+    Position.X = 106.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 220.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblAmount: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Amount in FMO:'
+    TabOrder = 6
+  end
+  object nbxAmount: TNumberBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Cursor = crIBeam
+    KeyboardType = DecimalNumberPad
+    Position.X = 106.000000000000000000
+    Position.Y = 52.000000000000000000
+    Size.Width = 220.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblUnits: TLabel
+    Position.X = 329.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'uL'
+    TabOrder = 7
+  end
+  object lblLocation: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Location:'
+    TabOrder = 8
+  end
+  object cboLocation: TComboBox
+    Position.X = 106.000000000000000000
+    Position.Y = 92.000000000000000000
+    Size.Width = 160.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object btnOK: TButton
+    Position.X = 160.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'OK'
+    OnClick = btnOKClick
+  end
+  object btnCancel: TButton
+    Position.X = 250.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Cancel'
+    OnClick = btnCancelClick
+  end
+end
