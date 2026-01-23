@@ -71,21 +71,21 @@ Download the latest release for your platform from the [Releases](../../releases
 ### Input Format (Delphi)
 
 ```csv
-color,amount,FMO
-FITC,10,1
-PerCP,23,1
-BUV395,66,1
-APC,25,1
-eFluor 450,23,0
-BV785,76,0
-PerCP-Cy5.5,100,0
+Dye,amount,FMO
+FITC,10,True
+PerCP,23,True
+BUV395,66,True
+APC,25,True
+eFluor 450,23,False
+BV785,76,False
+PerCP-Cy5.5,100,False
 ```
 
 | Column | Description |
 |--------|-------------|
 | `Dye` | Dye/fluorophore name |
 | `Amount` | Volume per FMO tube (microliters) |
-| `FMO` | `1` = leave-out dye (make FMO), `0` = common backbone (always present) |
+| `FMO` | `True` = leave-out dye (make FMO), `False` = common backbone (always present) |
 
 ---
 
@@ -111,7 +111,7 @@ racket typed-cli.rkt input.csv output.csv
 ### Input Format (Racket)
 
 ```csv
-dye,final quantity,leave out?
+Dye,Amount,FMO
 FITC,10,yes
 PerCP,23,yes
 BUV395,66,yes
