@@ -83,8 +83,8 @@ PerCP-Cy5.5,100,0
 
 | Column | Description |
 |--------|-------------|
-| `color` | Dye/fluorophore name |
-| `amount` | Volume per FMO tube (microliters) |
+| `Dye` | Dye/fluorophore name |
+| `Amount` | Volume per FMO tube (microliters) |
 | `FMO` | `1` = leave-out dye (make FMO), `0` = common backbone (always present) |
 
 ---
@@ -123,9 +123,9 @@ PerCP-Cy5.5,100,no
 
 | Column | Description |
 |--------|-------------|
-| `dye` | Dye/fluorophore name |
-| `final quantity` | Volume per FMO tube (microliters) |
-| `leave out?` | `true`/`yes`/`1`/`y` = FMO dye, anything else = common backbone |
+| `Dye` | Dye/fluorophore name |
+| `Amount` | Volume per FMO tube (microliters) |
+| `FMO` | `true`/`yes`/`1`/`y` = FMO dye, anything else = common backbone |
 
 ### Output Format (Racket)
 
