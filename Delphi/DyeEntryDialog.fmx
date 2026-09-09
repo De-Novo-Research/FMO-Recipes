@@ -4,7 +4,7 @@ object dlgDyeEntry: TdlgDyeEntry
   BorderStyle = Single
   Caption = 'Dye Entry'
   ClientHeight = 180
-  ClientWidth = 350
+  ClientWidth = 304
   Position = ScreenCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -14,10 +14,10 @@ object dlgDyeEntry: TdlgDyeEntry
   OnShow = FormShow
   DesignerMasterStyle = 0
   object lblColor: TLabel
-    Position.X = 16.000000000000000000
-    Position.Y = 20.000000000000000000
-    Size.Width = 66.000000000000000000
-    Size.Height = 17.000000000000000000
+    Position.X = 16.00000000000000000
+    Position.Y = 20.00000000000000000
+    Size.Width = 66.00000000000000000
+    Size.Height = 17.00000000000000000
     Size.PlatformDefault = False
     Text = 'Dye Name:'
     TabOrder = 5
@@ -25,19 +25,19 @@ object dlgDyeEntry: TdlgDyeEntry
   object cboColor: TComboEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 0
-    ItemHeight = 19.000000000000000000
+    ItemHeight = 19.00000000000000000
     ItemIndex = -1
-    Position.X = 106.000000000000000000
-    Position.Y = 16.000000000000000000
-    Size.Width = 220.000000000000000000
-    Size.Height = 24.000000000000000000
+    Position.X = 114.00000000000000000
+    Position.Y = 16.00000000000000000
+    Size.Width = 160.00000000000000000
+    Size.Height = 24.00000000000000000
     Size.PlatformDefault = False
   end
   object lblAmount: TLabel
-    Position.X = 16.000000000000000000
-    Position.Y = 56.000000000000000000
-    Size.Width = 89.000000000000000000
-    Size.Height = 17.000000000000000000
+    Position.X = 16.00000000000000000
+    Position.Y = 56.00000000000000000
+    Size.Width = 89.00000000000000000
+    Size.Height = 17.00000000000000000
     Size.PlatformDefault = False
     Text = 'Amount in FMO:'
     TabOrder = 6
@@ -46,54 +46,55 @@ object dlgDyeEntry: TdlgDyeEntry
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 1
     Cursor = crIBeam
+    ValueType = Float
     KeyboardType = DecimalNumberPad
-    Position.X = 106.000000000000000000
-    Position.Y = 52.000000000000000000
-    Size.Width = 220.000000000000000000
-    Size.Height = 24.000000000000000000
+    Position.X = 114.00000000000000000
+    Position.Y = 53.00000000000000000
+    Size.Width = 160.00000000000000000
+    Size.Height = 24.00000000000000000
     Size.PlatformDefault = False
   end
   object lblUnits: TLabel
-    Position.X = 329.000000000000000000
-    Position.Y = 56.000000000000000000
-    Size.Width = 25.000000000000000000
-    Size.Height = 17.000000000000000000
+    Position.X = 285.00000000000000000
+    Position.Y = 56.00000000000000000
+    Size.Width = 25.00000000000000000
+    Size.Height = 17.00000000000000000
     Size.PlatformDefault = False
     Text = 'uL'
     TabOrder = 7
   end
   object lblLocation: TLabel
-    Position.X = 16.000000000000000000
-    Position.Y = 96.000000000000000000
-    Size.Width = 55.000000000000000000
-    Size.Height = 17.000000000000000000
+    Position.X = 16.00000000000000000
+    Position.Y = 101.00000000000000000
+    Size.Width = 55.00000000000000000
+    Size.Height = 17.00000000000000000
     Size.PlatformDefault = False
     Text = 'Location:'
     TabOrder = 8
   end
   object cboLocation: TComboBox
-    Position.X = 106.000000000000000000
-    Position.Y = 92.000000000000000000
-    Size.Width = 160.000000000000000000
-    Size.Height = 24.000000000000000000
+    Position.X = 114.00000000000000000
+    Position.Y = 96.00000000000000000
+    Size.Width = 160.00000000000000000
+    Size.Height = 24.00000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
   end
   object btnOK: TButton
-    Position.X = 160.000000000000000000
-    Position.Y = 136.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 28.000000000000000000
+    Position.X = 80.00000000000000000
+    Position.Y = 140.00000000000000000
+    Size.Width = 80.00000000000000000
+    Size.Height = 27.00000000000000000
     Size.PlatformDefault = False
     TabOrder = 3
     Text = 'OK'
     OnClick = btnOKClick
   end
   object btnCancel: TButton
-    Position.X = 250.000000000000000000
-    Position.Y = 136.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 28.000000000000000000
+    Position.X = 168.00000000000000000
+    Position.Y = 140.00000000000000000
+    Size.Width = 80.00000000000000000
+    Size.Height = 27.00000000000000000
     Size.PlatformDefault = False
     TabOrder = 4
     Text = 'Cancel'
