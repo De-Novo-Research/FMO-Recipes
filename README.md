@@ -39,6 +39,8 @@ A cross-platform desktop application built with FireMonkey (FMX).
 #### Pre-built Binaries
 
 Download the latest release for your platform from the [Releases](../../releases) page.
+Please note the MacOS release is an unsigned app; you will need to modify your app settings to
+run it.
 
 #### Building from Source
 
